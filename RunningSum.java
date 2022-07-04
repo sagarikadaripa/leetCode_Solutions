@@ -12,7 +12,7 @@ public class RunningSum {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter the the size of the array = ");
+        System.out.print("enter the the the size of the array = ");
         int size = sc.nextInt();
         int arr[] = new int[size];
         System.out.print("enter the elements of the array = ");

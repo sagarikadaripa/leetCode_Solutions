@@ -1,5 +1,6 @@
+import java.util.*;
 public class validMountain {
-    public boolean validMountainArray(int[] arr) {
+    public static boolean validMountainArray(int[] arr) {
         boolean goingUp = true;
         boolean wentUp = false;
         boolean wentDown = false;
@@ -28,5 +29,14 @@ public class validMountain {
             }
     }
     return wentUp && wentDown;
+    }
+    public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+         int arr[] = new int[5];
+         for(int i = 0; i< arr.length; i++){
+            arr[i] = sc.nextInt();
+         }
+         boolean res = validMountainArray(arr);
+         System.out.println("result = "+res);
     }
 }
